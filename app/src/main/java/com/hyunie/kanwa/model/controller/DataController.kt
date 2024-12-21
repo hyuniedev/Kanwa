@@ -1,9 +1,10 @@
 package com.hyunie.kanwa.model.controller
 
-import com.hyunie.kanwa.model.entity.Person
+import androidx.compose.runtime.mutableStateListOf
+import com.hyunie.kanwa.model.entity.User
 import java.util.Locale
 
 object DataController {
-    val lsPersonKanwaCardDefault = listOf(Person("Huu Nien"))
-    var locale = Locale.getDefault()
+    val user: User = User(name = "Huu Nien", lsKanwa = mutableStateListOf())
+    var locale: Locale = Locale.getDefault()
 }
